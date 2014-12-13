@@ -4,15 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Addition">
-    <title>Addition</title>
+    <meta name="description" content="Addisjon">
+    <title>Addisjon</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 
     <style type="text/css">
         body {
-            font-family: sans-serif;
+            font-family: "Comic Sans MS";
             margin:20px;
             font-size:70px;
+
+        }
+
+        input {
+            font-family: "Comic Sans MS";
+
         }
 
         table {
@@ -20,18 +26,22 @@
         }
 
         .game-wrapper {
+            border-radius: 5px;
+
             background-color:lightgray;
             margin-top:20px;
         }
 
 
         .score-wrapper {
+            border-radius: 5px;
             height:80px;
             width:600px;
             border:solid 1px lightgray;
         }
 
         .score {
+            font-size:0.8em;
             height:80px;
             width:0%;
             background-color: lightgreen;
@@ -77,11 +87,11 @@
 
     <div id="wrapper">
 
-        <h1>Pløssing, ok?</h1>
+        <h1>Addisjon</h1>
 
         <div class="score-wrapper">
             <div class="score">
-
+                0%
             </div>
         </div>
 
@@ -194,13 +204,16 @@
 
             });
 
-if(good){
-    if(score>93)
-        score = 93;
-    $('.score').css('width', (score+=7) + '%')
-    init();
-}
-}
+            if(good){
+
+                var s= Math.min(score+=7, 100);
+
+                $('.score').html(score + '%');
+                $('.score').css('width', score + '%')
+                init();
+
+            }
+        }
 
 function numbers(){
     return {a:randInt(),b:randInt()};
@@ -222,7 +235,6 @@ function len(num){
     return (num + '').length;
 }
 
-
 function numAt(num,i){
     var s = num + '';
 
@@ -238,7 +250,6 @@ function range(n){
         a.push(i);
     return a;
 }
-
 
 init();
 </script>
