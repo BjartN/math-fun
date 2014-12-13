@@ -159,8 +159,8 @@
                 $('#cell-2-'+i).html(i>=len(n.b) ? '' :numAt(n.b,i));
             });
 
-            $('input').unbind('change');
-            $('input').change(function(){
+            $('input').unbind('keyup');
+            $('input').keyup(function(){
                 validate(n,this);
             });
         }
