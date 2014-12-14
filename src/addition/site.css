@@ -1,0 +1,71 @@
+ body {
+            font-family: "Comic Sans MS";
+            margin:20px;
+            font-size:70px;
+
+        }
+
+        input {
+            font-family: "Comic Sans MS";
+
+        }
+
+        table {
+            width:600px;
+        }
+
+        .game-wrapper {
+            border-radius: 5px;
+
+            background-color:lightgray;
+            margin-top:20px;
+        }
+
+
+        .score-wrapper {
+            border-radius: 5px;
+            height:80px;
+            width:600px;
+            border:solid 1px lightgray;
+        }
+
+        .score {
+            font-size:0.8em;
+            height:80px;
+            width:0%;
+            background-color: lightgreen;
+        }
+
+        #wrapper {
+            width:600px;
+            margin: 100px auto;
+        }
+
+        table td {
+            text-align:center;
+        }
+
+        .sum  input {
+            text-align:center;
+            width:80px;
+            height:80px;
+            margin:5px;
+            font-size:70px;
+        }
+
+        .overflow  input {
+            text-align:center;
+            width:20px;
+            height:20px;
+            font-size:10px;
+            margin-bottom: 10px;
+
+        }
+
+        .number td {
+            background-color: lightgreen;
+        }
+
+        h1{
+            font-size:30px;
+        } 
