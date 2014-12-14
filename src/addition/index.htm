@@ -175,7 +175,7 @@
 
                 var elm = $('#sum-'+i);
                 var sum = isInt.test(elm.val()) ? parseInt(elm.val()) : 0;
-                var correct = numAt(n.a + n.b,i)
+                var correct = numAt(n.a + n.b, i)
                 var remainder = (numAt(n.a,i) + numAt(n.b,i))>9
                 var isCurr = elm.get(0)==curr;
 
@@ -207,9 +207,8 @@
             if(good){
 
                 var s= Math.min(score+=7, 100);
-
-                $('.score').html(score + '%');
-                $('.score').css('width', score + '%')
+                $('.score').html(s + '%');
+                $('.score').css('width', s + '%')
                 init();
 
             }
